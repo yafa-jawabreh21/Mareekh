@@ -1,2 +1,2 @@
 // Configure API base here
-window.APP_CONFIG = { API_BASE: "http://localhost:8000/api" };
+window.APP_CONFIG = { API_BASE: "https://mareekh-api.onrender.com" };
