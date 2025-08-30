@@ -1,0 +1,20 @@
+[
+  {
+    "material": "Rebar 16mm",
+    "needQty": 25,
+    "needDate": "2025-09-10",
+    "status": "RFQ"
+  },
+  {
+    "material": "Formwork Timber",
+    "needQty": 120,
+    "needDate": "2025-09-05",
+    "status": "PO Issued"
+  },
+  {
+    "material": "Concrete 40MPa",
+    "needQty": 300,
+    "needDate": "2025-09-02",
+    "status": "Scheduled"
+  }
+]

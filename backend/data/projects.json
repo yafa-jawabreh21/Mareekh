@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "برج سكني — الرياض",
+    "owner": "PIF Related",
+    "status": "active",
+    "progress": 42
+  },
+  {
+    "id": 2,
+    "name": "مستشفى تعليمي — جدة",
+    "owner": "MOH",
+    "status": "active",
+    "progress": 67
+  },
+  {
+    "id": 3,
+    "name": "مجمع تجاري — الدمام",
+    "owner": "Private",
+    "status": "on-hold",
+    "progress": 12
+  }
+]

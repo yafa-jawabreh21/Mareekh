@@ -1,0 +1,23 @@
+[
+  {
+    "item": "C-001",
+    "desc": "Excavation Works",
+    "qty": 1200,
+    "unit": "m³",
+    "rate": 35.0
+  },
+  {
+    "item": "C-145",
+    "desc": "Rebar Supply & Install",
+    "qty": 85,
+    "unit": "ton",
+    "rate": 2850.0
+  },
+  {
+    "item": "C-210",
+    "desc": "Ready Mix Concrete (40 MPa)",
+    "qty": 650,
+    "unit": "m³",
+    "rate": 260.0
+  }
+]

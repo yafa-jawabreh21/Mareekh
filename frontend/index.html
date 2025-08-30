@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="api-base" content="">
+  <title>Mareekh — Contractors Edition</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="config.js"></script>
+  <script type="module" src="assets/js/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">المريخ — المقاولات (v9)</div>
+    <div id="api-status" class="api-status">Checking API…</div>
+    <nav class="nav">
+      <a href="#/dashboard">لوحة القيادة</a>
+      <a href="#/projects">المشاريع</a>
+      <a href="#/boq">بنود الـBOQ</a>
+      <a href="#/evm">EVM</a>
+      <a href="#/procurement">المشتريات</a>
+      <a href="#/qaqc">QA/QC</a>
+      <a href="#/hse">HSE</a>
+      <a href="#/settings">الإعدادات</a>
+    </nav>
+  </header>
+
+  <main id="app"></main>
+
+  <footer class="footer">
+    <small>© Mareekh Platform — Contractors Edition. Powered by HTML/CSS/JS + Python.</small>
+  </footer>
+
+  <!-- Templates -->
+  <template id="tpl-dashboard">
+    <section class="section">
+      <h1>لوحة القيادة</h1>
+      <div class="cards">
+        <div class="card">
+          <h3>SPI</h3>
+          <p id="spi">—</p>
+        </div>
+        <div class="card">
+          <h3>CPI</h3>
+          <p id="cpi">—</p>
+        </div>
+        <div class="card">
+          <h3>المشاريع النشطة</h3>
+          <p id="active-projects">—</p>
+        </div>
+      </div>
+    </section>
+  </template>
+
+  <template id="tpl-projects">
+    <section class="section">
+      <h1>المشاريع</h1>
+      <table class="tbl" id="projects-table">
+        <thead><tr><th>المشروع</th><th>المالك</th><th>الحالة</th><th>نسبة الإنجاز</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </template>
+
+  <template id="tpl-boq">
+    <section class="section">
+      <h1>بنود الـ BOQ</h1>
+      <table class="tbl" id="boq-table">
+        <thead><tr><th>البند</th><th>الوصف</th><th>الكمية</th><th>وحدة</th><th>سعر</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </template>
+
+  <template id="tpl-evm">
+    <section class="section">
+      <h1>Earned Value (EVM)</h1>
+      <div class="cards">
+        <div class="card"><h3>PV</h3><p id="pv">—</p></div>
+        <div class="card"><h3>EV</h3><p id="ev">—</p></div>
+        <div class="card"><h3>AC</h3><p id="ac">—</p></div>
+        <div class="card"><h3>SPI</h3><p id="spi2">—</p></div>
+        <div class="card"><h3>CPI</h3><p id="cpi2">—</p></div>
+      </div>
+    </section>
+  </template>
+
+  <template id="tpl-procurement">
+    <section class="section">
+      <h1>المشتريات</h1>
+      <table class="tbl" id="proc-table">
+        <thead><tr><th>المادة</th><th>الحاجة</th><th>تاريخ الحاجة</th><th>الحالة</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </template>
+
+  <template id="tpl-qaqc">
+    <section class="section">
+      <h1>QA/QC</h1>
+      <p>وحدة ضبط الجودة — نموذجية، أضف لاحقًا: Submittals, RFIs, NCR...</p>
+    </section>
+  </template>
+
+  <template id="tpl-hse">
+    <section class="section">
+      <h1>HSE</h1>
+      <p>السلامة والصحة المهنية — مؤشرات أساسية.</p>
+    </section>
+  </template>
+
+  <template id="tpl-settings">
+    <section class="section">
+      <h1>الإعدادات</h1>
+      <p>عنوان الـ API الحالي: <code id="api-base"></code></p>
+    </section>
+  </template>
+</body>
+</html>
