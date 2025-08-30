@@ -9,7 +9,7 @@
     guess = fromMeta.trim();
   } else if (loc.protocol === 'file:') {
     // فتح مباشر للملف من الجهاز
-    guess = 'http://localhost:8000/api';
+    guess = 'https://mareekh.onrender.com';
   } else if (loc.port && loc.port !== '80' && loc.port !== '443') {
     // بيئة تطوير (مثلاً http://localhost:5500) → نفترض الباك إند على 8000
     guess = loc.protocol + '//' + loc.hostname + ':8000/api';
