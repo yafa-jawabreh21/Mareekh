@@ -1,5 +1,5 @@
 // Simple API wrapper
-const API_BASE = (window.APP_CONFIG && window.APP_CONFIG.API_BASE) || "http://localhost:8000/api";
+const API_BASE = "https://mareekh-api.onrender.com/api";
 
 async function apiGet(path){
   const res = await fetch(`${API_BASE}${path}`);
