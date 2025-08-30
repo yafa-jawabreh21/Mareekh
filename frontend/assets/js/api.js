@@ -1,5 +1,5 @@
 // Simple API wrapper
-const API_BASE = "https://mareekh.onrender.com";
+const API_BASE = "https://mareekh.onrender.com/api";
 
 async function apiGet(path){
   const res = await fetch(`${API_BASE}${path}`);
